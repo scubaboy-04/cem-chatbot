@@ -47,7 +47,7 @@ export default function CEMChatbot() {
     try {
       // POST to the NestJS backend at /chat
       // This is the frontend equivalent of the article's ActionProvider call
-      const res = await fetch('https://cem-chatbot.onrender.com', {
+      const res = await fetch('https://cem-chatbot.onrender.com/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
